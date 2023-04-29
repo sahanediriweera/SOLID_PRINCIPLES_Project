@@ -57,7 +57,7 @@ public class AddBookBoard extends JFrame{
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                AddBook.submit();
+                submit()
 
             }
         });
@@ -74,5 +74,10 @@ public class AddBookBoard extends JFrame{
         setSize(450,400);
         setLocationRelativeTo(null);
         setVisible(true);
+    }
+
+    public void submit(){
+        AddBook.submit(titleField.getText(),authorField.getText(),
+                publisherField.getText(),publishedDateField.getText());
     }
 }
