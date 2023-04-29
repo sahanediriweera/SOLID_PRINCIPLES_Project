@@ -57,7 +57,7 @@ public class AddBookBoard extends JFrame{
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                submit()
+                submit();
 
             }
         });
